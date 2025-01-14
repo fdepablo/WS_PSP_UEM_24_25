@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import beans.Persona;
 
@@ -50,7 +51,7 @@ public class _03_ListaObjetosAFichero {
 		listaPersonas.add(p4);
 		listaPersonas.add(p5);
 		
-		Gson gson = new Gson();
+		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		String json = gson.toJson(listaPersonas);
 		
 		File file = new File("simpson.json");
