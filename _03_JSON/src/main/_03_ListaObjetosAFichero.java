@@ -51,7 +51,9 @@ public class _03_ListaObjetosAFichero {
 		listaPersonas.add(p4);
 		listaPersonas.add(p5);
 		
-		Gson gson = new GsonBuilder().setPrettyPrinting().create();
+		Gson gsonPretty = new GsonBuilder().setPrettyPrinting().create();
+		System.out.println(gsonPretty.toJson(listaPersonas));
+		Gson gson = new Gson();
 		String json = gson.toJson(listaPersonas);
 		
 		File file = new File("simpson.json");
