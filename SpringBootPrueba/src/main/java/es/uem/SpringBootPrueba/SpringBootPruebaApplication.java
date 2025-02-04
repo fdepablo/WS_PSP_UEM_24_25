@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Bean;
 
 import es.uem.SpringBootPrueba.modelo.entidad.Direccion;
 import es.uem.SpringBootPrueba.modelo.entidad.Persona;
+import es.uem.SpringBootPrueba.persistencia.DaoPersona;
 import es.uem.SpringBootPrueba.persistencia.DireccionDao;
 
 @SpringBootApplication
@@ -37,6 +38,9 @@ public class SpringBootPruebaApplication {
 		
 		listaDireciones = ddao.findByTipoVia("calle");
 		System.out.println(listaDireciones);
+		
+		DaoPersona daop = context.getBean("daoPersona", DaoPersona.class);
+		daop.save(p);
 		
 	}
 	

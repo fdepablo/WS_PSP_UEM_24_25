@@ -3,10 +3,20 @@ package es.uem.SpringBootPrueba.modelo.entidad;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
+
 //Con la anotación @Component damos de alta el objeto en el contexto de Spring.
 //Ete objeto se dara de alta con el nombre de la clase en lowerCamelCase "persona"
 @Component
+@Entity
 public class Persona {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String nombre = "Capi";
 	private int edad;
@@ -14,6 +24,7 @@ public class Persona {
 	//Con esta anotacion aplicamos la DI y decimos que nos inyecte un objeto de tipo direccion
 	//que este en el contexto a esta referncia
 	@Autowired
+	@OneToOne(cascade = CascadeType.ALL)
 	private Direccion direccion;
 	
 	public Integer getId() {
