@@ -1,0 +1,62 @@
+{
+	"nombre":"Flameador 2024",
+	"precio":1900,
+	"procesador":{
+		"marca":"Manker",
+		"modelo":"9700x",
+		"hz":5000
+	},
+	"placa_base":{
+		"modelo":"B470",
+		"marca":"iAmanoob",
+		"slots_ram":4
+	},
+	"ram":[
+		{
+			"marca":"Flamming",
+			"tipo":"DDR4",
+			"capacidad":"8gb",
+			"hz":6000,
+			"cl":30
+		},
+		{
+			"marca":"Flamming",
+			"tipo":"DDR4",
+			"capacidad":"8gb",
+			"hz":6000,
+			"cl":30
+		}
+	],
+	"fuente_de_alimentacion":{
+		"marca":"Manker",
+		"modelo":"ATX",
+		"potencia":750
+	},
+	"disco_duro":{
+		"modelo":"manker",
+		"tipo":"HDD",
+		"capacidad":"2Tb"
+	},
+	"tarjeta_grafica":{
+		"marca":"iAmanoob",
+		"modelo":"4080",
+		"cudas":9830
+	},
+	"perifericos":[
+			{
+				"tipo":"raton",
+				"nombre":"insultaning pro 1",
+				"marca":"flammer"
+			},
+			{
+				"tipo":"teclado",
+				"nombre":"insultaning pro 1",
+				"marca":"flammer"
+			},
+			{
+				"tipo":"monitor",
+				"nombre":"insultaning pro 1",
+				"marca":"flammer"
+			}
+	]
+}

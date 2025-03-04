@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ordenador>
+    <nombre>Flameador 2024</nombre>
+    <precio>1900</precio>
+	<procesador>
+		<marca>Manker</marca>
+		<modelo>9700X</modelo>
+		<hz>5000</hz>
+	</procesador>
+	<placa_base>
+		<modelo>B470</modelo>
+		<marca>iAmanoob</marca>
+		<slots_ram>4</slots_ram>            
+	</placa_base>        
+	<rams>
+		<ram id="1">
+			<marca>Flaming</marca>
+			<tipo>DDR4</tipo>
+			<capacidad>8GB</capacidad>
+			<hz>6000</hz>
+			<cl>30</cl>
+		</ram>
+		<ram id="2">
+			<marca>Flaming</marca>
+			<tipo>DDR4</tipo>
+			<capacidad>8GB</capacidad>
+			<hz>6000</hz>
+			<cl>30</cl>
+		</ram>
+	</rams>	
+	<disco_duro>
+		<marca>Manker</marca>
+		<tipo>HDD</tipo>
+		<capacidad>2TB</capacidad>
+	</disco_duro>
+	<fuente_alimentacion>
+		<marca>Manker</marca>
+		<modelo>ATX</modelo>
+		<potecia>750</potecia>
+	</fuente_alimentacion>
+	<tarjeta_grafica>
+		<marca>iAmanoob</marca>
+		<modelo>4080</modelo>
+		<cudas>9830</cudas>
+	</tarjeta_grafica>
+    <perifericos>
+        <periferico>
+			<tipo>Teclado</tipo>
+            <nombre>Flaming pro eco 2</nombre>
+            <marca>Flamer Gaming SL</marca>
+        </periferico>
+        <periferico>
+			<tipo>Ratón</tipo>
+            <nombre>Insultating pro 1</nombre>
+            <marca>Flamer Gaming SL</marca>
+        </periferico>
+		<periferico>
+			<tipo>Monitor</tipo>
+            <nombre>4K full de chill</nombre>
+            <marca>Munion S.L.</marca>
+        </periferico>
+    </perifericos>
+</ordenador>
